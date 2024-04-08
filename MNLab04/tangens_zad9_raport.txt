@@ -1,0 +1,21 @@
+_________________________
+| x0  |  Fzero solution |
+| 4.5 |     4.7124      |   
+| 6.0 |     6.2832      |
+
+____________________________________________________
+|  a  |  b  | Bisection solution | Secant solution |
+| 4.5 | 6.0 |        4.7124      |     6.2832      |____________
+            |          42        |       5         | Iterations|
+
+Analizując otrzymanie rozwiązania można stwierdzić, że obie metody znalazły poprawne rozwiązania, 
+natomiast metoda bisekcji zbiega z rozwiązaniem do lewej granicy, natomiast metoda siecznych do prawej granicy,
+a nawet poza nią wykracza.
+
+Metoda siecznych, znalazła swoje rozwiązanie w 88% mniej iteracjach, co czyni ją o wiele szybszą.
+
+Przez to, że metoda bisekcja polega na podziale podanego przedziału na równe odcinki nie jest ona w stanie znaleźć rozwiązania, które wykracza poza przedział, więc musiała się ograniczyć do jedynego rozwiązania w tym przedziale, jakim jest 4.7124.
+
+Z kolei po wyniku metody siecznych, można stwierdzić, że wykazuje ona tendencje do zbliżania się do prawej granicy przedziału. Patrząc na ten przypadek, możemy zauważyć że metoda siecznych może wykroczyć poza z góry określony przedział przeszukiwań.
+
+
