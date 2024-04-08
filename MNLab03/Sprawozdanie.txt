@@ -1,0 +1,25 @@
+Direct Solution: 
+	 Iterations: 1 
+	 Time: 0.533305s
+	 Error Norm: 6.875605e-13 
+
+Jacobi Solution: 
+	 Iterations: 617 
+	 Time: 1.109746s
+	 Error Norm: Inf 
+
+Gauss Seidel Solution: 
+	 Iterations: 1000 
+	 Time: 152.382258s
+	 Error Norm: 6.436735e+10 
+
+Analizując przedstawione rozwiązania, najlepszym wyborem wydaje się być "Direct Solution", 
+ponieważ osiągnęło najmniejszy błąd normy (6.875605e-13) i bardzo krótki czas wykonania (0.533305s). 
+Jest to zwykle preferowane, jeśli możliwe, ponieważ daje dokładne rozwiązanie w minimalnym czasie.
+
+"Jacobi Solution" ma nieskończoną normę błędu, co sugeruje, że może nie być stabilne.
+
+"Gauss Seidel Solution" ma bardzo duży błąd normy (6.436735e+10), co oznacza, że rozwiązanie jest dalekie od oczekiwanego. 
+Ponadto czas wykonania (152.382258s) jest nieporównywalnie dłuższy niż w przypadku "Direct Solution".
+
+Podsumowując, "Direct Solution" jest najlepszym wyborem ze względu na dokładność i szybkość wykonania.
