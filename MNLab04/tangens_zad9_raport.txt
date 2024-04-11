@@ -8,14 +8,13 @@ ____________________________________________________
 | 4.5 | 6.0 |        4.7124      |     6.2832      |____________
             |          42        |       5         | Iterations|
 
-Analizując otrzymanie rozwiązania można stwierdzić, że obie metody znalazły poprawne rozwiązania, 
-natomiast metoda bisekcji zbiega z rozwiązaniem do lewej granicy, natomiast metoda siecznych do prawej granicy,
-a nawet poza nią wykracza.
 
-Metoda siecznych, znalazła swoje rozwiązanie w 88% mniej iteracjach, co czyni ją o wiele szybszą.
-
-Przez to, że metoda bisekcja polega na podziale podanego przedziału na równe odcinki nie jest ona w stanie znaleźć rozwiązania, które wykracza poza przedział, więc musiała się ograniczyć do jedynego rozwiązania w tym przedziale, jakim jest 4.7124.
-
-Z kolei po wyniku metody siecznych, można stwierdzić, że wykazuje ona tendencje do zbliżania się do prawej granicy przedziału. Patrząc na ten przypadek, możemy zauważyć że metoda siecznych może wykroczyć poza z góry określony przedział przeszukiwań.
+Funkcja fzero dla punktu x0 = 6.0 znalazła poprawne miejsce zerowe funkcji tangens, natomiast dla punktu 4.5 nie była w stanie go znaleźć, z uwagi na to, że szuka ona miejsca w którym zmienia się znak wartości funkcji dla krańców określonego przedziału zaczynając od a=4.5 i b=4.5. Znalazła ona takie miejsce w przedziale [4.24544, 4.75456]
+Ostatecznie po kilkudziesięciu próbach znalezienia miejsca zerowego w tym przedziale, musiała się poddać, z uwagi na to że tangens w tym zakresie ma swój punkt osobliwy, co uniemożliwiło znalezienie miejsca zerowego dla określonego przez niej przedziału.
 
 
+Analizująć otrzymanie rozwiązania można stwierdzić, że obie zaimplementowane przeze mnie metody znalazły rozwiązania takie jak funkcja fzero.
+
+Patrząc na kolejne znalezionie argumenty przez metode bisekcji, możemy zauważyć że krążyła ona w kółko wokół punktu osobliwego, aż różnice pomiędzy pomiędzy kolejnymi argumentami osiągnęły wartość tolerancji.
+
+Z kolei po wyniku metody siecznych, można stwierdzić, że wykazuje ona tendencje do zbliżania się do prawej granicy przedziału. Patrząc na ten przypadek, możemy zauważyć że metoda siecznych może wykroczyć poza z góry określony przedział przeszukiwań, co pozwoliło na znalezienie miejsca zerowego.
