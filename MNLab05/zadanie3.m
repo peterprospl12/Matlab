@@ -53,14 +53,14 @@ end
     legend('Location', 'northwest');
 
     subplot(3,1,2);
-    semilogy(N, max_coefficients_difference_1, 'DisplayName', 'Max coefficients difference')
+    plot(N, max_coefficients_difference_1, 'DisplayName', 'Max coefficients difference')
     title('Max coefficients differences [Linear b]')
     xlabel('Vandermonde matrix size')
     ylabel('Max coefficients difference');
     legend('Location', 'northwest')
 
     subplot(3,1,3);
-    semilogy(N, max_coefficients_difference_2, 'DisplayName', 'Max coefficients difference')
+    plot(N, max_coefficients_difference_2, 'DisplayName', 'Max coefficients difference')
     title('Max coefficients differences [Disturbed linear b]')
     xlabel('Vandermonde matrix size')
     ylabel('Max coefficients difference');
